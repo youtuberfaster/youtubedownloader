@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>YouTube Video Downloader - Fast & Free</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-download"></i>
+                    <span>YouTube<span class="highlight">Downloader</span></span>
+                </div>
+                <nav class="nav-menu">
+                    <a href="#" class="active">YouTube</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">TikTok</a>
+                    <a href="#">How to</a>
+                </nav>
+                <button class="menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="hero-section">
+                <h1>YouTube Video Downloader</h1>
+                <p class="subtitle">Download any YouTube video in high quality - MP4, HD, 4K, MP3</p>
+                
+                <div class="download-form">
+                    <div class="input-group">
+                        <input type="text" id="videoUrl" placeholder="Paste YouTube video link here...">
+                        <button id="analyzeBtn" class="btn-primary">
+                            <i class="fas fa-search"></i> Analyze
+                        </button>
+                    </div>
+                    <p class="example">Example: https://youtube.com/watch?v=VIDEO_ID</p>
+                </div>
+
+                <div id="loading" class="loading-spinner" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Fetching video information...</p>
+                </div>
+
+                <div id="error" class="error-message" style="display: none;"></div>
+
+                <div id="videoInfo" class="video-info" style="display: none;">
+                    <div class="video-preview">
+                        <img id="thumbnail" src="" alt="Video thumbnail">
+                        <div class="video-details">
+                            <h2 id="videoTitle"></h2>
+                            <p id="videoDuration"></p>
+                        </div>
+                    </div>
+
+                    <div class="download-options">
+                        <h3>Download Options</h3>
+                        <div id="downloadLinks" class="download-grid"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-section">
+                <h2>Why Choose Our Downloader?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Fast Download</h3>
+                        <p>Lightning-fast processing and download speeds</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>100% Safe</h3>
+                        <p>No malware, no viruses, completely secure</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Mobile Friendly</h3>
+                        <p>Works perfectly on all devices</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-infinity"></i>
+                        <h3>Unlimited</h3>
+                        <p>Download as many videos as you want</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="how-to-section">
+                <h2>How to Download YouTube Videos?</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <p>Copy the YouTube video URL</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <p>Paste it in the box above</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <p>Click "Analyze"</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <p>Choose quality & download</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Free YouTube video downloader tool - Download videos in MP4, HD, 4K, and MP3 format.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Supported Sites</h4>
+                    <ul>
+                        <li>YouTube</li>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>TikTok</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 YouTube Downloader. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
